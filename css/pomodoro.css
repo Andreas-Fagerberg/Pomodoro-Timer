@@ -1,0 +1,79 @@
+body {
+    font-family: Victor Mono;
+}
+
+#page-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#pomodoro-settings {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+    width: 28rem;
+    border: 0.1rem solid rgb(126, 126, 126);
+    border-radius: 0.2rem;
+    margin-bottom: 4rem;
+}
+
+#pomodoro-settings > input {
+    margin-bottom: 1rem;
+    width: 7rem;
+    border-radius: 0.1rem;
+}
+
+#pomodoro-settings > button{
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+#progress-bar-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(126, 126, 126);
+    border-radius: 0.2rem;
+    width: 20rem;
+    visibility: inherit;
+    height: 1rem;
+    
+}
+#progress-bar {
+    visibility: inherit;
+    background-color: rgba(118, 231, 108, 0.719);
+    width: 0%;
+    height: 100%;
+    transition: width 0.1s linear;
+
+}
+
+#cancel-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    visibility: inherit;
+}
+
+#pomodoro-container {
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.2rem;
+    border-top: 0.1rem solid rgb(126, 126, 126);
+    border-bottom: 0.15rem solid rgb(75, 75, 75);
+    border-left: 0.1rem solid rgb(126, 126, 126);
+    border-right: 0.2rem solid rgb(75, 75, 75);
+    box-shadow: 0.18rem 0.15rem rgba(170, 170, 173, 0.507);
+    width: 22rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+#pomodoro-timer-display {
+    font-weight: 500;
+    font-size: larger;
+}

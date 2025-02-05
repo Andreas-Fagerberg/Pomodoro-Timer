@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer type="module" src="/javascript/pomodoroTimer.js"></script>
+    <script defer type="module" src="/javascript/index.js"></script>
+    <link rel="stylesheet" href="/css/pomodoro.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="page-wrapper">
+    <div id="pomodoro-settings">
+      <label for="time1">How long would you like each session to be: </label>
+      <input type="number" name="pomodoro-session-time" id="pomodoro-session-time" />
+      <label for="time1">How long would you like each break to be: </label>
+      <input type="number" name="pomodoro-break-time" id="pomodoro-break-time" />
+      <label for="time1">How many sessions would you like: </label>
+      <input type="number" name="pomodoro-repeats" id="pomodoro-repeats" />
+      <button id="pomodoro-button">Accept</button>
+    </div>
+
+    <div id="pomodoro-container">
+      <p id="pomodoro-timer-display"></p>
+      <div id="progress-bar-container">
+        
+      </div>
+      <button id="cancel-button">Cancel</button>
+    </div>
+</div>
+  </body>
+</html>
